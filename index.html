@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.imgdiv {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Pets of ESTP 2019</h1>
+  <p>What breeds are these?</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <div class="imgdiv">
+      <img src="https://cdn.pixabay.com/photo/2016/08/04/18/49/keeshond-1569785__480.jpg" style="width:100%">
+      dtrn
+    </div>
+    <div class="imgdiv">
+      <img src="https://cdn.pixabay.com/photo/2016/01/11/22/35/dog-1134492__480.jpg" style="width:100%">
+      dtrn
+    </div>
+  </div>
+  <div class="column">
+    <div class="imgdiv">
+      <img src="https://cdn.pixabay.com/photo/2019/03/17/17/49/cat-4061570__480.jpg" style="width:100%">
+      dtnr
+    </div>
+    <div class="imgdiv">
+      <img src="https://cdn.pixabay.com/photo/2016/11/19/16/16/dog-1840127__480.jpg" style="width:100%">
+      dtnr
+    </div>
+  </div>
+  <div class="column">
+    <div class="imgdiv">
+      <img src="https://cdn.pixabay.com/photo/2019/04/25/15/11/cat-4155119__480.jpg" style="width:100%">
+      dtnr
+    </div>
+    <div class="imgdiv">
+      <img src="https://cdn.pixabay.com/photo/2014/05/16/16/33/basset-hound-345645__480.jpg" style="width:100%">
+      dtnr
+    </div>
+  </div>
+  <div class="column">
+    <div class="imgdiv">
+      <img src="https://cdn.pixabay.com/photo/2018/01/17/00/46/shiba-inu-3087207__480.jpg" style="width:100%">
+      dtnr
+    </div>
+    <div class="imgdiv">
+      <img src="https://cdn.pixabay.com/photo/2017/04/13/22/33/maine-coon-cat-2228866__480.jpg" style="width:100%">
+      dtnr
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
